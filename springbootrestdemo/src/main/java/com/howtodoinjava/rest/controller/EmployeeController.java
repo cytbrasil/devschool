@@ -23,13 +23,13 @@ public class EmployeeController
     @Autowired
     private EmployeeDAO employeeDao;
     
-    @GetMapping(path="/", produces = "application/json")
+    @GetMapping(path="/consultar", produces = "application/json")
     public Employees getEmployees(){
     	System.out.println("Consulting Employees");
         return employeeDao.getAllEmployees();
     }
     
-    @PostMapping(path= "/", consumes = "application/json", produces = "application/json")
+    @PostMapping(path= "/salvar", consumes = "application/json", produces = "application/json")
     public ResponseEntity<Object> addEmployee(@RequestBody Employee employee) 
                  throws Exception{       
         //Generate resource id
