@@ -3,6 +3,7 @@ import './Login.css'
 
 interface LoginProps{
     title: string
+    subtitle?: string
 }
 
 const Login = ({title}: LoginProps) => {
