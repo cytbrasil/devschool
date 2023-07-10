@@ -1,13 +1,33 @@
 //import { useState } from 'react'
 import './App.css'
+import HeaderApp from './components/HeaderApp'
+import Login from './components/Login'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>Teste</h1>
-      </div>
+      <header>
+
+        <HeaderApp 
+          title='DevSchool'
+          subtitle='aprendizado e desenvolvimento'
+        />
+
+      </header>
+
+      <main>
+        
+        <Login
+          title='Faça o login para ter acesso a comunidade'
+        />
+
+      </main>
+
+      <footer>
+        
+        
+      </footer>
     </>
   )
 }
