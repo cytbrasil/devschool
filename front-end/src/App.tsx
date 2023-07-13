@@ -1,33 +1,15 @@
-//import { useState } from 'react'
+//imports biblioteca
+import {RouterProvider} from 'react-router-dom'
+
+import {router}from './router'
+
 import './App.css'
-import HeaderApp from './components/HeaderApp'
-import Login from './components/Login'
 
 function App() {
 
   return (
     <>
-      <header>
-
-        <HeaderApp 
-          title='DevSchool'
-          subtitle='aprendizado e desenvolvimento'
-        />
-
-      </header>
-
-      <main>
-        
-        <Login
-          title='Faça o login para ter acesso a comunidade'
-        />
-
-      </main>
-
-      <footer>
-        
-        
-      </footer>
+      <RouterProvider router={router}/>
     </>
   )
 }

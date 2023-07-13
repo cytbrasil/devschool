@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
+.container {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.img {
+    width: 280px;
+    border-radius: 200px;
+    border: solid 3px yellow;
+}
+
+.title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 96px;
+    color: yellow;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-size: large;
+    color: yellow;
+}

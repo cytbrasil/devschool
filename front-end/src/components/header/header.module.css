@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
+header {
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 100%;
+    height: 100px;
+    padding: 5px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.img {
+    width: 85px;
+    border-radius: 50px;
+}
+
+.title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButtons a {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+.divButtons a:hover {
+    color: yellow;
+    font-size: 32px;
+}
