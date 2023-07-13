@@ -1,10 +1,10 @@
-import {Link} from 'react-router-dom'
+import { RegisterApp } from "../../components/register";
+
 
 export function Register(){
     return(
         <div>
-            <h1>!!PAGINA DE REGISTRO!!</h1>
-            <Link to='/'>Home</Link>
+            <RegisterApp/>
         </div>
     )
 }
