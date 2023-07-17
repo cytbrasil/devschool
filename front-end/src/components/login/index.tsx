@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { AiFillEyeInvisible } from 'react-icons/ai'
+import { AiFillEye } from 'react-icons/ai'
+
 
 import styles from './login.module.css'
-
-import olho1 from '../../assets/olho2.png'
-import olho2 from '../../assets/olho1.png'
 import logo from '../../assets/logo icon.gif'
 
 
@@ -62,24 +62,28 @@ export function LoginApp({title}: LoginProps){
 
                     </div>
 
-                    <div className={styles.divform}>
+                    <div className={styles.containerInput}>
 
-                        <label htmlFor="" className={styles.label}>Senha</label>
+                        <div className={styles.divform}>
 
-                        {
-                            showPassword ? 
-                            <input type="text" placeholder='digite sua senha' required/> :
-                            <input type="password" placeholder='digite sua senha' required/>
-                        }
-                        
-                        {
-                            showPassword ? 
-                            <img className={styles.imgs} onClick={handleShowPassword} src={olho2} alt="show Password" /> :
-                            <img className={styles.imgs} onClick={handleShowPassword} src={olho1} alt="show Password" />
-                        }
-                        
-                        
+                            <label htmlFor="" className={styles.label}>Senha</label>
+
+                            {
+                                showPassword ? 
+                                <input type="text" placeholder='digite sua senha' required/> :
+                                <input type="password" placeholder='digite sua senha' required/>
+                            }
+                            
+                            {
+                                showPassword ? 
+                                <abbr title="esconder senha"><AiFillEyeInvisible className={styles.eyes} onClick={handleShowPassword}/> </abbr>:
+                                <abbr title="mostrar senha"><AiFillEye className={styles.eyes} onClick={handleShowPassword}/></abbr>
+                            }
+                            
+                            
+                        </div>
                     </div>
+
 
                     <button>Entrar</button>
 

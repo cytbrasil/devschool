@@ -1,32 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
 .header {
-    margin-top: 6vh;
     text-align: center;
+    margin-top: 5px;
 }
 
-.header img {
-    width: 150px;
-    border-radius: 80px;
+.header .logo {
+    width: 50px;
+    border-radius: 60px;
     border: solid 2px yellow;
 }
 
-.header h1 {
+.header .title {
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
     color: yellow;
     font-size: 30px;
 }
 
-.header h2 {
-    font-family: sans-serif;
+.header .subtitle {
     color: yellow;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .body {
-    margin-top: 2vh;
+    margin-top: 1vh;
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,19 +39,26 @@
     box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.divtitle {
+.divTitle {
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     padding: 24px;
     text-align: center;
 }
 
-.title {
+.titleContainer {
     color: aliceblue;
     font-weight: bolder;
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
-    font-size: 60px;
+    font-size: 50px;
+}
+
+.subtitleContainer {
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .form {
@@ -60,13 +66,12 @@
     text-align: center;
 }
 
-.divform {
-    margin-bottom: 8px;
+.divForm {
     padding-bottom: 18px;
     position: relative;
 }
 
-.divform .label {
+.divForm .label {
     display: block;
     margin-bottom: 4px;
     text-align: center;
@@ -75,7 +80,7 @@
     color: rgb(5, 2, 2);
 }
 
-.divform input {
+.divForm input {
     width: 60%;
     border-radius: 8px;
     padding: 8px;
@@ -87,6 +92,15 @@
     text-align: center;
 }
 
+.containerInput .label {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: rgb(5, 2, 2);
+}
+
 .containerInput input {
     width: 60%;
     border-radius: 8px;
@@ -94,6 +108,7 @@
     border: 2px solid #dfdfdf;
     text-align: center;
     margin-left: 16px;
+    margin-bottom: 10px;
 }
 
 .containerInput .eyes {
@@ -101,7 +116,7 @@
 }
 
 .form button {
-    width: 95px;
+    width: 120px;
     height: 50px;
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
@@ -117,4 +132,26 @@
 
 .form button:hover {
     background: linear-gradient(120deg, #3e61ac 0%, #29a7c7 100%);
+}
+
+.alert h4 {
+    color: rgb(6, 201, 16);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.alert button {
+    margin-top: 12px;
+}
+
+.alert2 h4 {
+    color: rgb(155, 11, 18);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.alert3 h4 {
+    font-size: 12px;
+    color: rgb(197, 211, 7);
+    font-weight: bolder;
 }

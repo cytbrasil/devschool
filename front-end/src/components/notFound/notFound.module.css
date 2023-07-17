@@ -24,10 +24,9 @@
 }
 
 .container section h2 {
-    font-size: 40px;
-    font-family: 'Rubik Mono One', sans-serif;
-    font-family: 'VT323', monospace;
-    color: yellow;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(243, 243, 243);
     margin-bottom: 40px;
 }
 
