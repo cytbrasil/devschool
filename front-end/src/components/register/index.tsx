@@ -18,6 +18,10 @@ interface RegisterProps{
 
 export function RegisterApp({title, subtitle}: RegisterProps){
 
+    const [name, setName]         = useState("")
+    const [lastName, setLastName] = useState("")
+    const [email, setEmail]       = useState("")
+ 
     const [showPassword, setShowPassword] = useState(false)
     const [showPassword2, setShowPassword2] = useState(false)
 
@@ -78,6 +82,8 @@ export function RegisterApp({title, subtitle}: RegisterProps){
 
                         <label htmlFor="" className={style.label}>Nome</label>
                         <input 
+                            value={name}
+                            onChange={(e)=> setName(e.target.value)}
                             type="text"
                             placeholder='digite seu nome'
                             required
@@ -90,7 +96,8 @@ export function RegisterApp({title, subtitle}: RegisterProps){
 
                         <label htmlFor="" className={style.label}>Sobrenome</label>
                         <input 
-                            
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
                             type="text"
                             placeholder='digite seu sobrenome'
                             required
@@ -102,7 +109,8 @@ export function RegisterApp({title, subtitle}: RegisterProps){
 
                         <label htmlFor="" className={style.label}>E-mail</label>
                         <input 
-                            
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             type="email"
                             placeholder='digite seu email'
                             required
@@ -179,21 +187,26 @@ export function RegisterApp({title, subtitle}: RegisterProps){
                     
                     {
                         
+                       name.length &&
+                       lastName.length && 
+                       email.length && 
                        validPassword.length > 1 ?
-                       validPassword == repeatPassword ? ( 
-                        <div className={style.alert}>
-                            <h4>senhas iguais<FcApproval /></h4>
-                            <button>Cadastrar</button>
-                        </div>
-                    ):
-                    (
-                        <div className={style.alert2}>
-                            <h4>senhas difrentes <FcCancel/></h4>
-                        </div>
-                    ):
-                        <div className={style.alert3}>
-                            <h4>preencha todos os campos <FcMediumPriority/></h4>
-                        </div>
+
+                            validPassword == repeatPassword ? ( 
+                                <div className={style.alert}>
+                                    <h4>senhas iguais<FcApproval /></h4>
+                                    <button>Cadastrar</button>
+                                </div>
+                            ):
+                            (
+                                <div className={style.alert2}>
+                                    <h4>senhas difrentes <FcCancel/></h4>
+                                </div>
+                            ):
+                                <div className={style.alert3}>
+                                    <h4>preencha todos os campos <FcMediumPriority/></h4>
+                                </div>
+                                
                     }
                     
 
