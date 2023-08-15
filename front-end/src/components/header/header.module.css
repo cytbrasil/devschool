@@ -3,8 +3,8 @@ header {
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     width: 100%;
-    height: 100px;
-    padding: 5px 20px;
+    height: 60px;
+    padding: 2.5px 10px;
 }
 
 .container {
@@ -19,19 +19,19 @@ header {
     align-items: center;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    border-radius: 50px;
-    padding: 2px;
+    border-radius: 25px;
+    padding: 1px;
 }
 
 .img {
-    width: 85px;
-    border-radius: 50px;
+    width: 43px;
+    border-radius: 25px;
 }
 
 .title {
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     color: aliceblue;
 }
@@ -46,12 +46,12 @@ header {
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
-    padding: 15px;
+    padding: 8px;
 }
 
 .divButtons a:hover {
     color: yellow;
-    font-size: 32px;
+    font-size: 17px;
 }

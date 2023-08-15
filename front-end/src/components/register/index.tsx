@@ -8,10 +8,10 @@ import { FcMediumPriority } from 'react-icons/fc'
 
 import style from './register.module.css' 
 
-import logo from '../../assets/logo icon.gif'
+
 
 interface RegisterProps{
-    title: string
+    title?: string
     subtitle?: string
 }
 
@@ -52,19 +52,7 @@ export function RegisterApp({title, subtitle}: RegisterProps){
     
     return(
         <>
-        <section className={style.header}>
-
-            <img 
-                className={style.logo}
-                src={logo} 
-                alt="Logo DevSchool"
-             />
-
-             <h1 className={style.title}>DEVSCHOOL</h1>
-            <h2 className={style.subtitle}>aprendizado e desenvolvimento</h2>
-
-        </section>
-
+       
         <main className={style.body}>
 
             <section className={style.container}>
@@ -119,27 +107,18 @@ export function RegisterApp({title, subtitle}: RegisterProps){
                     </div>
 
                     <div className={style.containerInput}>
-                        <label htmlFor="" className={style.label}>Senha</label>
+
 
                         <div className={style.divform}>
-
-                            {
-                                showPassword ? 
-                                <input 
-                                    value={validPassword}
-                                    onChange={ (e)=>setValidPassword(e.target.value)}
-                                    type="text" placeholder='digite sua senha' 
-                                    required
-                                /> :
-
-                                <input 
-                                    value={validPassword}
-                                    onChange={ (e)=>setValidPassword(e.target.value)}
-                                    type="password" 
-                                    placeholder='digite sua senha' 
-                                    required
-                                />
-                            }
+                            <label htmlFor="" className={style.label}>Senha</label>
+                            
+                            <input 
+                                type={showPassword ? "text" : "password"}
+                                placeholder='digite sua senha'
+                                value={validPassword}
+                                onChange={ (e)=>setValidPassword(e.target.value)}
+                                required
+                            />
                             
                             {
                                 showPassword ? 
@@ -152,28 +131,19 @@ export function RegisterApp({title, subtitle}: RegisterProps){
                     </div>
 
                     <div className={style.containerInput}>
-                        <label htmlFor="" className={style.label}>Repita a senha</label>
 
                         <div className={style.divform}>
+                            <label htmlFor="" className={style.label}>Repita a senha</label>
+                            <input 
+                                type={showPassword2 ? "text" : "password"} 
+                                placeholder='digite sua senha novamente' 
+                                value={repeatPassword}
+                                onChange={ (e)=>setRepeatPassword(e.target.value)}
+                                required
+                            />
 
-                            {
-                                showPassword2 ? 
-                                <input 
-                                    value={repeatPassword}
-                                    onChange={ (e)=>setRepeatPassword(e.target.value)}
-                                    type="text" 
-                                    placeholder='digite sua senha novamente' 
-                                    required
-                                /> :
 
-                                <input 
-                                    value={repeatPassword}
-                                    onChange={ (e)=>setRepeatPassword(e.target.value)}
-                                    type="password" 
-                                    placeholder='digite sua senha novamente' 
-                                    required
-                                />
-                            }
+                            
                             
                             {
                                 showPassword2 ? 
@@ -190,7 +160,7 @@ export function RegisterApp({title, subtitle}: RegisterProps){
                        name.length &&
                        lastName.length && 
                        email.length && 
-                       validPassword.length > 1 ?
+                       validPassword.length > 0 ?
 
                             validPassword == repeatPassword ? ( 
                                 <div className={style.alert}>

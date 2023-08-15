@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
 .header {
-    margin-top: 6vh;
+    margin-top: 3vh;
     text-align: center;
 }
 
 .header img {
-    width: 150px;
+    width: 75px;
     border-radius: 80px;
     border: solid 2px yellow;
 }
@@ -14,19 +14,18 @@
     font-family: 'Rubik Mono One', sans-serif;
     font-family: 'VT323', monospace;
     color: yellow;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .header h2 {
     font-family: sans-serif;
     color: yellow;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .body {
     margin-top: 2vh;
     width: 100%;
-    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +35,8 @@
     background-color: aliceblue;
     border-radius: 14px;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
+    max-height: 600vh;
     box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -117,4 +117,8 @@
 
 .form button:hover {
     background: linear-gradient(120deg, #3e61ac 0%, #29a7c7 100%);
+}
+
+.form .alert {
+    font-size: 15px;
 }
