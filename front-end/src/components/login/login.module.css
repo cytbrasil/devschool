@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
+.header {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.header img {
+    width: 75px;
+    border-radius: 80px;
+    border: solid 2px yellow;
+}
+
+.header h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    color: yellow;
+    font-size: 20px;
+}
+
+.header h2 {
+    font-family: sans-serif;
+    color: yellow;
+    font-size: 10px;
+}
+
+.body {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: aliceblue;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 600vh;
+    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.divtitle {
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    padding: 24px;
+    text-align: center;
+}
+
+.title {
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+}
+
+.form {
+    padding: 18px;
+    text-align: center;
+}
+
+.divform {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.divform .label {
+    display: block;
+    margin-bottom: 4px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(5, 2, 2);
+}
+
+.divform input {
+    width: 60%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    text-align: center;
+}
+
+.containerInput {
+    text-align: center;
+}
+
+.containerInput input {
+    width: 60%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.containerInput .eyes {
+    cursor: pointer;
+}
+
+.form button {
+    width: 95px;
+    height: 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #b37e1e 100%);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.form button:hover {
+    background: linear-gradient(120deg, #3e61ac 0%, #29a7c7 100%);
+}
+
+.form .alert {
+    font-size: 15px;
+}
